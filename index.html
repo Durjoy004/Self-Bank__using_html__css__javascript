@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Self Bank</title>
+</head>
+
+<body>
+    <div id="loginArea">
+        <h1>Welcome to Self Bank</h1>
+        <div class="box">
+            <h3>Login</h3>
+            <input type="email" id="email" placeholder="Email" !important>
+            <input type="password" id="pass" placeholder="password" !impotant>
+            <button id="button">Submit</button>
+        </div>
+    </div>
+    <div id="transactionArea">
+        <div class="container">
+            <div id="box_1">
+                <h4>Deposit</h3>
+                    <h2 >$<span id="currentDeposit">0</span></h2>
+            </div>
+            <div id="box_2">
+                <h4>Withdraw</h3>
+                    <h2 >$ <span id="currentWithdraw">0</span></h2>
+            </div>
+            <div id="box_3">
+                <h4>Balance</h3>
+                    <h2>$ <span id="balanceAmount">1240</span></h2>
+            </div>
+        </div>
+        <div class="cointainer_2">
+            <div id="b1">
+                <h3>Deposit</h3>
+                <input type="number" id="depoInpu" placeholder=" $ Enter amount want to deposit " required>
+                <button id="depoBtn">Deposit</button>
+            </div>
+            <div id="b2">
+                <h3>Withdraw</h3>
+                <input type="number" id="withdrawInpu" placeholder=" $ Enter amount want to Withdraw " required>
+                <button id="withBtn">Withdraw</button>
+            </div>
+        </div>
+    </div>
+    <script src="first.js"></script>
+</body>
+
+</html>

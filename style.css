@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ********************Login Area Start************************* */
+h1 {
+    text-align: center;
+    padding: 150px;
+}
+
+.box {
+    width: 700px;
+    height: 280px;
+    background-color: white;
+    position: relative;
+    margin-left: 320px;
+    margin-top: -120px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 6px 10px gray;
+    position: relative;
+
+}
+
+h3 {
+    padding: 20px;
+    font-size: larger;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: x-large;
+}
+
+#email {
+    position: absolute;
+    padding: 6px;
+    margin-left: 50px;
+    margin-top: 95px;
+    width: 90%;
+}
+
+#pass {
+    position: absolute;
+    padding: 6px;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 90%;
+}
+
+button {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 200px;
+    padding: 11px;
+    color: white;
+    background-color: #1DB954;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+/* ************************LOGIN AREA END********************************** */
+
+
+
+
+
+
+/* ************************Transaction Area Start************************* */
+
+
+#transactionArea {
+    display: none;
+}
+ 
+
+/* (Start) First three boxes Start located on the top of the web page*/
+
+.container {
+    display: flex;
+    
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    position: relative;
+}
+
+#box_1 {
+    background-color: slateblue;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+}
+
+#box_1 h2 {
+    font-size: xx-large;
+}
+
+#box_2 {
+    background-color: lightsalmon;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+}
+
+#box_2 h2 {
+    font-size: xx-large;
+}
+
+#box_3 {
+    background-color: orange;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+}
+
+#box_3 h2 {
+    font-size: xx-large;
+}
+/* (End) First three boxes Start located on the top of the web page*/
+
+/* (Start) Deposit Withdraw Boxes*/
+
+.cointainer_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+#b1 {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    margin: 50px;
+    margin-top: 60px;
+    border-radius: 8px;
+    margin-left: -25px;
+    box-shadow: 7px 7px 6px 10px gray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#b2 {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    margin: 50px;
+    margin-top: 60px;
+    left: 80px;
+    border-radius: 8px;
+    box-shadow: 7px 7px 6px 10px gray;
+    display: flex;
+    flex-direction: column;
+}
+
+#depoInpu {
+    padding: 7px;
+    position: absolute;
+    width: 75%;
+    margin: 50px;
+    margin-top: 90px;
+    margin-right: 3px;
+
+}
+
+#depoBtn {
+    position: absolute;
+    bottom: 20px;
+    left: -1px;
+
+}
+#depoBtn:hover{
+    opacity: 0.8;
+}
+
+#withdrawInpu {
+    padding: 7px;
+    position: absolute;
+    width: 75%;
+    margin: 50px;
+    margin-top: 90px;
+    margin-right: 3px;
+
+}
+
+#withBtn {
+    position: absolute;
+    bottom: 20px;
+    left: -1px;
+
+}
+#withBtn:hover{
+    opacity: 0.8;
+}
+/* (End) Deposit Withdraw Boxes*/
+
+
+
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+    .box{
+       position: relative;
+       margin-left: 35px;
+    }
+     
+    .cointainer_2 #b1{
+        width: 400px;
+      margin-left: 15px;
+    }
+    .cointainer_2 #b2{
+        left: -3%;
+        margin-top: 18px;
+      }
+    
+  }
+
+  
+/* For mobile Phones */
+@media only screen and (max-width: 425px) {
+
+h1{
+ margin-top: -100px;
+}
+.box{
+    width: 380px;
+}
+.box #email,#pass{
+    width: 80%;
+}
+.container{
+    margin-top: 10px;
+}
+
+.cointainer_2 #b1{
+    margin-top: 25px;
+    width: 350px;
+    margin-left: 40px;
+}
+#b2{
+    width: 370px;    
+    
+}
+
+}
